@@ -1,40 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Aadila, I love you!</title>
+<title>I Love Aadila</title>
+<style>
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.heart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+</style>
 </head>
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/colorama/0.4.3/colorama.min.js"></script>
-  <script>
-    import random
-    import colorama
-
-    def love_aadila():
-      print(colorama.Fore.RED + "Aadila, you are the love of my life." + colorama.Fore.RESET)
-      print(colorama.Fore.YELLOW + "I can't imagine my life without you." + colorama.Fore.RESET)
-      print(colorama.Fore.MAGENTA + "You are the most beautiful, intelligent, and caring woman I know." + colorama.Fore.RESET)
-      print(colorama.Fore.CYAN + "I am so lucky to have you in my life." + colorama.Fore.RESET)
-      print(colorama.Fore.GREEN + "I love you more than words can say." + colorama.Fore.RESET)
-
-      # This code will calculate the ASCII value of the letters in Aadila's name and add them together.
-      # The sum of the ASCII values is 143, which is a common way to say "I love you" in code.
-      sum_of_ascii_values = 0
-      for letter in "Aadila":
-        sum_of_ascii_values += ord(letter)
-
-      print(colorama.Fore.BLUE + "The sum of the ASCII values of your name is", sum_of_ascii_values, ", which is a code for 'I love you'." + colorama.Fore.RESET)
-
-      # This code will randomly generate a heart shape and print it out.
-      heart = ""
-      for i in range(10):
-        for j in range(10):
-          if i == 0 or i == 9 or j == 0 or j == 9:
-            heart += "*"
-          else:
-            heart += random.choice(" .")
-        print(heart)
-
-    if __name__ == "__main__":
-      love_aadila()
-  </script>
+<h1>I Love Aadila</h1>
+<div class="heart"></div>
+<div class="text">
+  Aadila, you are the love of my life. I can't imagine my life without you. You are the most beautiful, intelligent, and caring person I know. I love the way you make me laugh. I love the way you challenge me to be a better person. I love the way you always know how to make me feel better when I'm down. I love you more than words can say.
+</div>
 </body>
 </html>
